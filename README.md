@@ -2,7 +2,7 @@
 
 <img src="https://media.giphy.com/media/rozkXKMYXgGF7w7eta/giphy.gif" /><br>
 
-Este projeto foi criado para aprimorar meus conhecimento em Javascript, alem de me dar uma bela ajuda em meu <b>controle financeiro 😁 </b></br>
+Este projeto foi criado para aprimorar meus conhecimento em Javascript, além de me dar uma bela ajuda em meu <b>controle financeiro 😁 </b></br>
 
 <h3>Esta aplicação foi desenvolvida em:<h3>
 
