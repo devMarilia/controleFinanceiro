@@ -1,4 +1,8 @@
 const transactionsUl = document.querySelector('#transactions')
+const incomeDisplay = document.querySelector('#money-plus')
+const expenseDisplay = document.querySelector('#money-minus')
+const balanceDisplay = document.querySelector('#balance')
+
 const dummyTransactions = [{
         id: 1,
         name: 'Bolo de brigadeiro',
@@ -36,8 +40,32 @@ const addTransactionsIntoDOM = transaction => {
     `
     transactionsUl.append(li)
 }
+const updateBalanceValues = () => {
+    const transactionAmouts = dummyTransactions
+        .map(transaction => transaction.amout)
+
+    const total = transactionAmouts
+        .reduce((accomulador, transaction) => accomulador + transaction, 0)
+        .toFixed(2)
+
+    const income = transactionAmouts
+        .filter(value => value > 0)
+        .reduce((accomulador, value) => accomulador + value, 0)
+        .toFixed(2)
+
+    const expense = Math.abs(transactionAmouts
+    .filter(value => value < 0)
+    .reduce((accomulador, value) => accomulador + value, 0))
+    .toFixed(2)
+    
+    balanceDisplay.textContent = `R$ ${total}`
+    incomeDisplay.textContent = `R$ ${income}`
+    expenseDisplay.textContent = `R$ ${expense}`
+}
+
 const init = () => {
     dummyTransactions.forEach(addTransactionsIntoDOM)
+    updateBalanceValues()
 }
 init()
 // addTransactionsIntoDOM(dummyTransactions[1])
