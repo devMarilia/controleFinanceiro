@@ -10,7 +10,7 @@ Este projeto foi criado para aprimorar meus conhecimento em Javascript, alem de 
 [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)<br>
 [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/javascript)
 
-<h4>É tão pouco código para para resolver nossas tarefas do dias que a felicicade contagia!</h4><br>
+<h4>É tão pouco código para resolver nossas tarefas do dias que a felicicade contagia!</h4><br>
 
 <img src="https://media.giphy.com/media/2siCyPNKuSDJK4pk4X/giphy.gif" /><br><br>
 
